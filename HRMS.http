@@ -1,0 +1,15 @@
+@HRMS_HostAddress = http://localhost:5204
+
+GET {{HRMS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST http://localhost:5204/api/auth/register
+{
+    
+    "Email":"test@test.test",
+    "Password":"@Password123",
+    "ConfirmPassword":"@Password123",
+    "FullName":"TestTest"
+}
